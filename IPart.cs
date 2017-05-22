@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MPS.Common.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace MPS.PartFactory
 {
-    public class Class1
+    interface IPart
     {
+        ProjectConfig LoadConfig();
     }
 }
